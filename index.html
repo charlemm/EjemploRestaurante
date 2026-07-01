@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CENIZA — Cocina de Fuego</title>
+<meta name="description" content="CENIZA. Cocina de brasa y fuego lento en el corazón de la ciudad. Ingredientes locales, técnica artesanal, experiencia inolvidable.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Scroll progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Mouse glow effect -->
+<div class="mouse-glow" id="mouseGlow"></div>
+
+<!-- NAVIGATION -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#inicio" class="logo">
+      <span class="logo-mark">C</span>
+      <span class="logo-text">CENIZA</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#galeria">Galería</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#reservaciones">Reservaciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a href="#reservaciones" class="btn btn-primary btn-nav">Reservar Mesa</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#inicio">Inicio</a>
+  <a href="#menu">Menú</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#especialidades">Especialidades</a>
+  <a href="#galeria">Galería</a>
+  <a href="#testimonios">Testimonios</a>
+  <a href="#reservaciones">Reservaciones</a>
+  <a href="#contacto">Contacto</a>
+  <a href="#reservaciones" class="btn btn-primary">Reservar Mesa</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1800&q=80" alt="Platillo de brasa CENIZA" loading="eager">
+    <div class="hero-overlay"></div>
+    <div class="ember" style="--x:12%; --y:22%; --delay:0s;"></div>
+    <div class="ember" style="--x:82%; --y:18%; --delay:1.2s;"></div>
+    <div class="ember" style="--x:70%; --y:70%; --delay:2.4s;"></div>
+    <div class="ember" style="--x:25%; --y:78%; --delay:0.6s;"></div>
+    <div class="ember" style="--x:50%; --y:40%; --delay:1.8s;"></div>
+  </div>
+
+  <div class="hero-content container">
+    <p class="eyebrow reveal">Desde 2016 · Cocina de brasa</p>
+    <h1 class="hero-title reveal">
+      El fuego lento <span class="italic">cuenta</span><br> la mejor historia de la ciudad.
+    </h1>
+    <p class="hero-desc reveal">
+      En CENIZA transformamos ingredientes locales en experiencias memorables,
+      cocinados a fuego vivo por manos que entienden el tiempo como ingrediente.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#reservaciones" class="btn btn-primary">Reservar Ahora</a>
+      <a href="#menu" class="btn btn-secondary">Ver Menú</a>
+    </div>
+  </div>
+
+  <div class="hero-stats container reveal">
+    <div class="stat-card">
+      <span class="stat-value">⭐ 4.9/5</span>
+      <span class="stat-label">Calificación promedio</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-value counter" data-target="5000">0</span>
+      <span class="stat-label">Clientes satisfechos</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-value"><span class="counter" data-target="10">0</span>+</span>
+      <span class="stat-label">Años de experiencia</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-value"><span class="counter" data-target="100">0</span>%</span>
+      <span class="stat-label">Ingredientes frescos</span>
+    </div>
+  </div>
+
+  <a href="#nosotros" class="scroll-cue" aria-label="Bajar a la siguiente sección">
+    <span></span>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="nosotros">
+  <div class="container about-grid">
+    <div class="about-image reveal">
+      <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1000&q=80" alt="Interior del restaurante CENIZA" loading="lazy">
+      <div class="about-image-badge">
+        <span>10+</span>
+        <small>años perfeccionando el fuego</small>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <p class="eyebrow reveal">Nuestra Historia</p>
+      <h2 class="section-title reveal">La brasa es nuestro único<br> ingrediente secreto.</h2>
+      <p class="reveal">
+        CENIZA nació de una idea simple: la mejor cocina no necesita atajos.
+        Cada platillo pasa por el fuego vivo — leña, carbón y tiempo — antes de
+        llegar a tu mesa. Nuestro chef trabaja junto a productores locales
+        para asegurar que cada ingrediente cuente su propia historia.
+      </p>
+
+      <ul class="checklist reveal">
+        <li><span class="check">✔</span> Ingredientes frescos</li>
+        <li><span class="check">✔</span> Cocina artesanal</li>
+        <li><span class="check">✔</span> Ambiente elegante</li>
+        <li><span class="check">✔</span> Excelente servicio</li>
+        <li><span class="check">✔</span> Chef especializado</li>
+        <li><span class="check">✔</span> Ingredientes locales</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALTIES -->
+<section class="specialties" id="especialidades">
+  <div class="container">
+    <p class="eyebrow reveal center">Especialidades</p>
+    <h2 class="section-title reveal center">Lo que nos distingue</h2>
+
+    <div class="specialty-grid">
+      <article class="specialty-card reveal">
+        <div class="specialty-img"><img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=700&q=80" alt="Rib Eye Premium" loading="lazy"></div>
+        <div class="specialty-body">
+          <h3>Rib Eye Premium</h3>
+          <p>Corte madurado 28 días, sellado a fuego directo y finalizado con mantequilla de hierbas.</p>
+          <span class="price">$620</span>
+        </div>
+      </article>
+
+      <article class="specialty-card reveal">
+        <div class="specialty-img"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=700&q=80" alt="Pasta Artesanal" loading="lazy"></div>
+        <div class="specialty-body">
+          <h3>Pasta Artesanal</h3>
+          <p>Pasta fresca hecha en casa, salsa de tomate al fuego lento y albahaca de nuestro huerto.</p>
+          <span class="price">$285</span>
+        </div>
+      </article>
+
+      <article class="specialty-card reveal">
+        <div class="specialty-img"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=700&q=80" alt="Salmón al Grill" loading="lazy"></div>
+        <div class="specialty-body">
+          <h3>Salmón al Grill</h3>
+          <p>Salmón fresco a la parrilla de carbón, glaseado de miel y cítricos, vegetales de temporada.</p>
+          <span class="price">$395</span>
+        </div>
+      </article>
+
+      <article class="specialty-card reveal">
+        <div class="specialty-img"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Pizza al Horno" loading="lazy"></div>
+        <div class="specialty-body">
+          <h3>Pizza al Horno</h3>
+          <p>Masa madre fermentada 48 horas, horneada en horno de leña a 400°C.</p>
+          <span class="price">$245</span>
+        </div>
+      </article>
+
+      <article class="specialty-card reveal">
+        <div class="specialty-img"><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=700&q=80" alt="Sushi Especial" loading="lazy"></div>
+        <div class="specialty-body">
+          <h3>Sushi Especial</h3>
+          <p>Selección del día con pescados de temporada y toques de nuestra brasa.</p>
+          <span class="price">$340</span>
+        </div>
+      </article>
+
+      <article class="specialty-card reveal">
+        <div class="specialty-img"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80" alt="Postres Artesanales" loading="lazy"></div>
+        <div class="specialty-body">
+          <h3>Postres Artesanales</h3>
+          <p>Creaciones de temporada elaboradas cada mañana por nuestro equipo de pastelería.</p>
+          <span class="price">$165</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- MENU PREVIEW -->
+<section class="menu" id="menu">
+  <div class="container">
+    <p class="eyebrow reveal center">Nuestro Menú</p>
+    <h2 class="section-title reveal center">Una selección para cada momento</h2>
+
+    <div class="menu-tabs reveal" role="tablist">
+      <button class="menu-tab active" data-cat="entradas">Entradas</button>
+      <button class="menu-tab" data-cat="fuertes">Platos Fuertes</button>
+      <button class="menu-tab" data-cat="postres">Postres</button>
+      <button class="menu-tab" data-cat="bebidas">Bebidas</button>
+    </div>
+
+    <div class="menu-panels">
+      <div class="menu-panel active" data-panel="entradas">
+        <div class="menu-item"><span class="menu-item-name">Tártara de Res al Carbón</span><span class="menu-dots"></span><span class="menu-item-price">$185</span></div>
+        <div class="menu-item"><span class="menu-item-name">Pulpo a las Brasas</span><span class="menu-dots"></span><span class="menu-item-price">$225</span></div>
+        <div class="menu-item"><span class="menu-item-name">Burrata Ahumada</span><span class="menu-dots"></span><span class="menu-item-price">$165</span></div>
+        <div class="menu-item"><span class="menu-item-name">Croquetas de Jamón Ibérico</span><span class="menu-dots"></span><span class="menu-item-price">$145</span></div>
+      </div>
+      <div class="menu-panel" data-panel="fuertes">
+        <div class="menu-item"><span class="menu-item-name">Rib Eye Premium</span><span class="menu-dots"></span><span class="menu-item-price">$620</span></div>
+        <div class="menu-item"><span class="menu-item-name">Costilla Braseada 12h</span><span class="menu-dots"></span><span class="menu-item-price">$480</span></div>
+        <div class="menu-item"><span class="menu-item-name">Salmón al Grill</span><span class="menu-dots"></span><span class="menu-item-price">$395</span></div>
+        <div class="menu-item"><span class="menu-item-name">Risotto de Hongos</span><span class="menu-dots"></span><span class="menu-item-price">$310</span></div>
+      </div>
+      <div class="menu-panel" data-panel="postres">
+        <div class="menu-item"><span class="menu-item-name">Tarta de Chocolate Ahumado</span><span class="menu-dots"></span><span class="menu-item-price">$165</span></div>
+        <div class="menu-item"><span class="menu-item-name">Flan de Vainilla al Fuego</span><span class="menu-dots"></span><span class="menu-item-price">$135</span></div>
+        <div class="menu-item"><span class="menu-item-name">Sorbete de Temporada</span><span class="menu-dots"></span><span class="menu-item-price">$110</span></div>
+      </div>
+      <div class="menu-panel" data-panel="bebidas">
+        <div class="menu-item"><span class="menu-item-name">Coctel de Autor CENIZA</span><span class="menu-dots"></span><span class="menu-item-price">$195</span></div>
+        <div class="menu-item"><span class="menu-item-name">Vino Tinto de la Casa</span><span class="menu-dots"></span><span class="menu-item-price">$220</span></div>
+        <div class="menu-item"><span class="menu-item-name">Mocktail de Temporada</span><span class="menu-dots"></span><span class="menu-item-price">$120</span></div>
+      </div>
+    </div>
+
+    <div class="menu-cta reveal">
+      <a href="#" class="btn btn-primary">Ver Menú Completo</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why">
+  <div class="container">
+    <p class="eyebrow reveal center">Por Qué Elegirnos</p>
+    <h2 class="section-title reveal center">La diferencia está en los detalles</h2>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <span class="why-icon">🔥</span>
+        <h3>Ingredientes Frescos</h3>
+        <p>Selección diaria de productores locales de confianza.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">👨‍🍳</span>
+        <h3>Chef Profesional</h3>
+        <p>Más de una década de experiencia en cocina de fuego.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">🍽️</span>
+        <h3>Servicio de Calidad</h3>
+        <p>Atención cálida y precisa en cada visita.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">✨</span>
+        <h3>Ambiente Exclusivo</h3>
+        <p>Espacios diseñados para momentos inolvidables.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">🧑‍🌾</span>
+        <h3>Platillos Artesanales</h3>
+        <p>Elaboración cuidadosa, sin atajos ni prisas.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">📍</span>
+        <h3>Excelente Ubicación</h3>
+        <p>En el corazón de la ciudad, de fácil acceso.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">📅</span>
+        <h3>Reservaciones Fáciles</h3>
+        <p>Proceso simple, en línea o por teléfono.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">💬</span>
+        <h3>Atención Personalizada</h3>
+        <p>Cada mesa recibe un trato único y cercano.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="galeria">
+  <div class="container">
+    <p class="eyebrow reveal center">Galería</p>
+    <h2 class="section-title reveal center">Momentos alrededor del fuego</h2>
+
+    <div class="gallery-grid">
+      <div class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80" alt="Interior del restaurante" loading="lazy">
+        <span class="gallery-caption">Interior</span>
+      </div>
+      <div class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80" alt="Platillo insignia" loading="lazy">
+        <span class="gallery-caption">Platillo Insignia</span>
+      </div>
+      <div class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=700&q=80" alt="Bebidas de autor" loading="lazy">
+        <span class="gallery-caption">Bebidas</span>
+      </div>
+      <div class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=700&q=80" alt="Cocina en acción" loading="lazy">
+        <span class="gallery-caption">Cocina</span>
+      </div>
+      <div class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80" alt="Postres artesanales" loading="lazy">
+        <span class="gallery-caption">Postres</span>
+      </div>
+      <div class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=700&q=80" alt="Terraza exterior" loading="lazy">
+        <span class="gallery-caption">Terraza</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&times;</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonios">
+  <div class="container">
+    <p class="eyebrow reveal center">Testimonios</p>
+    <h2 class="section-title reveal center">Lo que dicen nuestros comensales</h2>
+
+    <div class="testimonial-track reveal">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"La comida fue espectacular y el servicio excelente. Cada detalle estuvo cuidado desde que llegamos."</p>
+        <div class="testimonial-author">
+          <span class="author-name">Marcela Reyes</span>
+          <span class="author-role">Cliente frecuente</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Uno de los mejores restaurantes que hemos visitado. El sabor a fuego se nota en cada platillo."</p>
+        <div class="testimonial-author">
+          <span class="author-name">Diego Fernández</span>
+          <span class="author-role">Crítico gastronómico</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Definitivamente volveremos muy pronto. El ambiente y la atención superaron nuestras expectativas."</p>
+        <div class="testimonial-author">
+          <span class="author-name">Andrea López</span>
+          <span class="author-role">Cliente</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATIONS -->
+<section class="reservations" id="reservaciones">
+  <div class="container reservations-grid">
+    <div class="reservations-info reveal">
+      <p class="eyebrow">Reservaciones</p>
+      <h2 class="section-title">Reserva tu mesa junto al fuego</h2>
+      <p>Completa el formulario y nuestro equipo confirmará tu reservación en menos de 24 horas.</p>
+      <ul class="res-details">
+        <li>🕐 Martes a Domingo, 13:00 – 23:00</li>
+        <li>👥 Grupos grandes: escríbenos directamente</li>
+        <li>📞 +52 81 4820 9884</li>
+      </ul>
+    </div>
+
+    <form class="reservation-form reveal" id="reservationForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="55 1234 5678" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <div class="form-group">
+          <label for="hora">Hora</label>
+          <input type="time" id="hora" name="hora" required>
+        </div>
+        <div class="form-group">
+          <label for="personas">Personas</label>
+          <select id="personas" name="personas" required>
+            <option value="">Selecciona</option>
+            <option>1 persona</option>
+            <option>2 personas</option>
+            <option>3 personas</option>
+            <option>4 personas</option>
+            <option>5+ personas</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Reservar Mesa</button>
+      <p class="form-success" id="formSuccess">✔ ¡Gracias! Tu solicitud fue recibida, te contactaremos pronto.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <p class="eyebrow reveal center">Preguntas Frecuentes</p>
+    <h2 class="section-title reveal center">¿Tienes dudas?</h2>
+
+    <div class="accordion reveal">
+      <div class="accordion-item">
+        <button class="accordion-header">¿Necesito reservación?<span class="accordion-icon">+</span></button>
+        <div class="accordion-body"><p>Recomendamos reservar con anticipación, especialmente los fines de semana, para garantizar tu mesa.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">¿Tienen opciones vegetarianas?<span class="accordion-icon">+</span></button>
+        <div class="accordion-body"><p>Sí, contamos con una selección de platillos vegetarianos elaborados con la misma técnica de fuego.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">¿Aceptan tarjetas?<span class="accordion-icon">+</span></button>
+        <div class="accordion-body"><p>Aceptamos todas las tarjetas de crédito y débito, así como pagos digitales.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">¿Hay estacionamiento?<span class="accordion-icon">+</span></button>
+        <div class="accordion-body"><p>Contamos con estacionamiento propio y valet parking en horario de servicio.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">¿Realizan eventos privados?<span class="accordion-icon">+</span></button>
+        <div class="accordion-body"><p>Sí, contamos con un espacio privado para eventos y celebraciones especiales. Contáctanos para más información.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contacto">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <p class="eyebrow">Contacto</p>
+      <h2 class="section-title">Visítanos</h2>
+
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <div><strong>Dirección</strong><p>Av. Fuego 452, Col. Centro, Monterrey, N.L.</p></div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📞</span>
+        <div><strong>Teléfono</strong><p>+52 81 4820 9884</p></div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">✉️</span>
+        <div><strong>Correo</strong><p>hola@ceniza.mx</p></div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">🕐</span>
+        <div><strong>Horario</strong><p>Martes a Domingo · 13:00 – 23:00</p></div>
+      </div>
+    </div>
+
+    <div class="contact-map reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.9!2d-100.3161!3d25.6714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQwJzE3LjAiTiAxMDDCsDE4JzU4LjAiVw!5e0!3m2!1ses!2smx!4v1700000000000"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Ubicación CENIZA"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#inicio" class="logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">CENIZA</span>
+      </a>
+      <p>Cocina de fuego, servida con alma.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="TikTok">TT</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Enlaces</h4>
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#galeria">Galería</a>
+      <a href="#reservaciones">Reservaciones</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Horario</h4>
+      <p>Martes a Domingo</p>
+      <p>13:00 – 23:00</p>
+      <p>Lunes cerrado</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p>Av. Fuego 452, Monterrey, N.L.</p>
+      <p>+52 81 4820 9884</p>
+      <p>hola@ceniza.mx</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>&copy; <span id="year"></span> CENIZA. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/528148209884?text=Hola,%20me%20interesa%20una%20pagina%20web%20para%20mi%20negocio"
+   target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.71 4.607 1.929 6.464L4 29l7.706-1.9A11.94 11.94 0 0016 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm6.965 16.845c-.297.836-1.47 1.53-2.404 1.72-.64.13-1.475.234-4.287-.92-3.598-1.49-5.914-5.147-6.096-5.386-.176-.24-1.454-1.936-1.454-3.694 0-1.758.917-2.622 1.243-2.98.297-.323.647-.404.863-.404.216 0 .432.002.62.012.216.01.487-.082.762.582.297.72 1.01 2.48 1.098 2.66.088.18.147.39.03.63-.117.24-.176.39-.352.6-.176.21-.37.469-.528.63-.176.18-.36.375-.155.735.206.36.912 1.505 1.958 2.436 1.345 1.198 2.478 1.57 2.838 1.746.36.176.57.147.78-.09.216-.24.918-1.068 1.164-1.435.24-.36.487-.3.822-.18.335.12 2.128 1.004 2.494 1.187.366.183.61.274.7.427.09.153.09.885-.207 1.72z"/></svg>
+</a>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
